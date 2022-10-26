@@ -6,7 +6,7 @@
 /*   By: mechane <mechane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 09:57:17 by mechane           #+#    #+#             */
-/*   Updated: 2022/10/21 15:05:43 by mechane          ###   ########.fr       */
+/*   Updated: 2022/10/25 09:48:05 by mechane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_lst;
 	t_list	*new_node;
 
-	if (!f || !del)
+	if (!f || !lst)
 		return (NULL);
 	new_lst = NULL;
 	while (lst)

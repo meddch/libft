@@ -6,7 +6,7 @@
 /*   By: mechane <mechane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 12:49:30 by mechane           #+#    #+#             */
-/*   Updated: 2022/10/24 23:49:45 by mechane          ###   ########.fr       */
+/*   Updated: 2022/10/25 09:38:16 by mechane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 			*d++ = *s++;
 	return (dst);
 }
-

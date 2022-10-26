@@ -6,7 +6,7 @@
 #    By: mechane <mechane@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/11 10:35:42 by mechane           #+#    #+#              #
-#    Updated: 2022/10/24 03:05:23 by mechane          ###   ########.fr        #
+#    Updated: 2022/10/25 09:54:40 by mechane          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,10 +70,10 @@ OBJS_M = $(addsuffix .o, $(FILES_M))
 OBJS_B = $(addsuffix .o, $(FILES_B))
 
 
-.c.o : $(SRCS_M) 
+%.o : %.c $(LIBFT_H)
 	$(CC) $(CFLAGS) -c -o $@ $<
 	
-$(NAME): $(OBJS_M) $(LIBFT_H)
+$(NAME): $(OBJS_M) 
 	$(AR) $@ $^
 
 bonus: $(OBJS_B)

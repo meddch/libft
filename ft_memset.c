@@ -6,12 +6,11 @@
 /*   By: mechane <mechane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 11:07:19 by mechane           #+#    #+#             */
-/*   Updated: 2022/10/24 23:47:42 by mechane          ###   ########.fr       */
+/*   Updated: 2022/10/25 09:38:35 by mechane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 void	*ft_memset(void *b, int c, size_t len)
 {
